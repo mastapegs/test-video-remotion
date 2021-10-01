@@ -46,10 +46,10 @@ export const Love: FC<LoveProps> = ({firstText, secondText}) => {
   return (
 	<div style={containerStyle}>
 		<div>
-			<Sequence from={0} durationInFrames={durationInFrames}>
+			<Sequence name="FirstText" from={0} durationInFrames={durationInFrames}>
 				<div style={firstTextStyle}>{firstText}</div>
 			</Sequence>
-			<Sequence from={secondTextFrameIn} durationInFrames={durationInFrames - secondTextFrameIn}>
+			<Sequence name="SecondText" from={secondTextFrameIn} durationInFrames={durationInFrames - secondTextFrameIn}>
 				<div style={secondTextStyle}>{secondText}</div>
 			</Sequence>
 		</div>
