@@ -22,7 +22,7 @@ export const Love: FC<LoveProps> = ({firstText, secondText}) => {
     display: 'flex', 
     justifyContent: "center",
     alignContent: "center",
-    fontFamily: "Arial, Helvetica, sans-serif"
+    fontFamily: "Arial, Helvetica, sans-serif",
 	}
 
   const firstTextStyle = {
