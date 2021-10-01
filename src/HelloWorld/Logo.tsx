@@ -1,10 +1,10 @@
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {Arc} from './Arc';
-import {Atom} from './Atom';
+import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { Arc } from './Arc';
+import { Atom } from './Atom';
 
 export const Logo: React.FC<{
 	transitionStart: number;
-}> = ({transitionStart}) => {
+}> = ({ transitionStart }) => {
 	const videoConfig = useVideoConfig();
 	const frame = useCurrentFrame();
 

@@ -1,7 +1,7 @@
 {
   "endOfLine": "auto",
   "singleQuote": true,
-  "bracketSpacing": false,
+  "bracketSpacing": true,
   "useTabs": true,
   "overrides": [
     {
