@@ -11,12 +11,13 @@ export const RemotionVideo: React.FC = () => {
 			<Composition
 				id="MyVideo"
 				component={Love}
-				durationInFrames={180}
+				durationInFrames={240}
 				fps={60}
 				width={1920}
 				height={1080}
 				defaultProps={{
-					text: 'I Love You!!!',
+					firstText: 'I Love You!!!',
+					secondText: '❤️, Daddy',
 				}}
 			/>
 			<Composition
