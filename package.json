@@ -8,7 +8,8 @@
 		"upgrade": "remotion upgrade",
 		"server": "ts-node server.tsx",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc",
-		"lint": "eslint . --ext ts,tsx,js,jsx --fix"
+		"lint": "eslint . --ext ts,tsx,js,jsx --fix",
+		"prepare": "husky install"
 	},
 	"repository": {},
 	"license": "UNLICENSED",
@@ -37,6 +38,7 @@
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-react": "^7.26.1",
 		"eslint-plugin-react-hooks": "^4.2.0",
-		"prettier": "2.4.1"
+		"prettier": "2.4.1",
+		"husky": "^7.0.0"
 	}
 }
