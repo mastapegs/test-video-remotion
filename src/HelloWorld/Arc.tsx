@@ -1,11 +1,11 @@
-import { useVideoConfig } from 'remotion';
-import { COLOR_1, COLOR_2 } from './config';
+import {useVideoConfig} from 'remotion';
+import {COLOR_1, COLOR_2} from './config';
 
 export const Arc: React.FC<{
 	progress: number;
 	rotation: number;
 	rotateProgress: number;
-}> = ({ progress, rotation, rotateProgress }) => {
+}> = ({progress, rotation, rotateProgress}) => {
 	const config = useVideoConfig();
 	const cx = config.width / 2;
 	const cy = config.height / 2;

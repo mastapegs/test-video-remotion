@@ -1,19 +1,14 @@
-import {
-	Sequence,
-	useVideoConfig,
-	interpolate,
-	useCurrentFrame,
-} from 'remotion';
-import { FC } from 'react';
+import {Sequence, useVideoConfig, interpolate, useCurrentFrame} from 'remotion';
+import {FC} from 'react';
 
 interface LoveProps {
 	firstText: string;
 	secondText: string;
 }
 
-export const Love: FC<LoveProps> = ({ firstText, secondText }) => {
+export const Love: FC<LoveProps> = ({firstText, secondText}) => {
 	const frame = useCurrentFrame();
-	const { durationInFrames } = useVideoConfig();
+	const {durationInFrames} = useVideoConfig();
 
 	const secondTextFrameIn = 90;
 	const fadeInTime = 60;
