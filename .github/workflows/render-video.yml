@@ -1,12 +1,12 @@
 on:
   workflow_dispatch:
     inputs:
-      titleText:
-        description: "Which text should it say?"
+      firstText:
+        description: "What does the first line say?"
         required: true
         default: "Welcome to Remotion"
-      titleColor:
-        description: "Which color should it be in?"
+      secondText:
+        description: "What does the second line say?"
         required: true
         default: "black"
 name: Render video
