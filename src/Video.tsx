@@ -17,7 +17,7 @@ export const RemotionVideo: React.FC = () => {
 				height={1080}
 				defaultProps={{
 					firstText: 'I Love You!!!',
-					secondText: '❤️, Daddy',
+					secondText: '❤️, Matt 🤓',
 				}}
 			/>
 			<Composition
