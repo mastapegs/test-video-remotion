@@ -3,6 +3,13 @@ module.exports = {
 		es2021: true,
 		node: true,
 	},
+	settings: {
+		'import/resolver': {
+			node: {
+				extensions: ['.js', '.jsx', '.ts', '.tsx'],
+			},
+		},
+	},
 	extends: [
 		'plugin:react/recommended',
 		'airbnb',
@@ -19,6 +26,18 @@ module.exports = {
 	},
 	plugins: ['react', '@typescript-eslint', 'prettier'],
 	rules: {
+		'import/extensions': [
+			'error',
+			'ignorePackages',
+			{
+				js: 'never',
+				jsx: 'never',
+				ts: 'never',
+				tsx: 'never',
+			},
+		],
+		'import/prefer-default-export': 'off',
+		'react/jsx-filename-extension': ['error', {extensions: ['.tsx', '.jsx']}],
 		'prettier/prettier': 'error',
 	},
 };
